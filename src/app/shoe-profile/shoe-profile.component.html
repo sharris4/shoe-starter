@@ -1,3 +1,7 @@
-<p>
-  shoe-profile works!
-</p>
+<h1 id="title">{{shoe.name}}</h1>
+<h3 id="subtitle">
+  <span id="price">${{shoe.price}}</span>
+  <span id="release-date">{{shoe.releaseDate}}</span>
+</h3>
+<p>{{shoe.description}}</p>
+<img *ngFor="let url of shoe.imageUrls" class="display-image" src={{url}}>
